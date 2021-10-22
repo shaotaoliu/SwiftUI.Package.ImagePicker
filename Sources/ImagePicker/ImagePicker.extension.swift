@@ -3,7 +3,7 @@ import AVFoundation
 
 extension ImagePicker {
     
-    static func checkCameraStatus() throws {
+    public static func checkCameraStatus() throws {
         
         if !UIImagePickerController.isSourceTypeAvailable(.camera) {
             throw ImagePickerError.unavailable
