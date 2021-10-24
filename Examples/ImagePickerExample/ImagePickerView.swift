@@ -31,13 +31,13 @@ struct ImagePickerView: View {
                     Button(action: {
                         vm.showImagePicker(sourceType: .camera)
                     }, label: {
-                        ImageLable(title: "Camera", systemImage: "camera")
+                        ImageLabel(title: "Camera", systemImage: "camera")
                     })
                     
                     Button(action: {
                         vm.showImagePicker(sourceType: .library)
                     }, label: {
-                        ImageLable(title: "Photos", systemImage: "photo")
+                        ImageLabel(title: "Photos", systemImage: "photo")
                     })
                 }
                 .sheet(isPresented: $vm.showCameraSheet) {
@@ -56,7 +56,7 @@ struct ImagePickerView: View {
     }
 }
 
-struct ImageLable: View {
+struct ImageLabel: View {
     let title: String
     let systemImage: String
     
